@@ -15,7 +15,7 @@ COPY . /app
 
 WORKDIR /app
 
-RUN ant MakeAuthKey && ant
+RUN cd appinventor && ant MakeAuthKey && ant
 
 EXPOSE 8888
 
