@@ -14,4 +14,6 @@ WORKDIR /app
 
 RUN ant MakeAuthKey && ant
 
+EXPOSE 8888
+
 ENTRYPOINT [ "/bin/bash", "./docker-entrypoint.sh" ]
